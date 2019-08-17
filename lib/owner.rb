@@ -56,6 +56,7 @@ class Owner
     self.cats.clear
     self.dogs.each {|x| x.mood = "nervous"}
     self.cats.each {|x| x.mood = "nervous"}
+    binding.pry
   end
 
 end
