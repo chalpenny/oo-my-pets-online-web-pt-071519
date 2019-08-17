@@ -54,8 +54,8 @@ class Owner
   def sell_pets
     self.dogs.clear
     self.cats.clear
-    self.dogs.each {|x| x.mood = "nervous"}
-    self.cats.each {|x| x.mood = "nervous"}
+    self.dogs.each {|x| x.mood = "nervous", x.owner = nil}
+    self.cats.each {|x| x.mood = "nervous", x.owner = nil}
   #  binding.pry
   end
 
