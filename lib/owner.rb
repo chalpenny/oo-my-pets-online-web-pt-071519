@@ -58,7 +58,10 @@ class Owner
     self.cats.each {|x| x.mood = "nervous"}
     self.dogs.each {|x| x.owner = nil}
     self.cats.each {|x| x.owner = nil}
-  #  binding.pry
   end
 
+  def list_pets
+    puts Cats.all + Dogs.all
+  end
+  
 end
