@@ -28,6 +28,7 @@ class Owner
   end
 
   def cats
+<<<<<<< HEAD
     Cat.all.select {|cat| cat.owner == self}
   end
 
@@ -45,6 +46,9 @@ class Owner
 
   def walk_dogs(dog_name)
   #  dog_name.mood = "happy"
+=======
+    Cats.all.collect {|cat| cat.name == self}
+>>>>>>> 9d5da091d69b3b820b0c7c22fd873ec424a153a3
   end
 
 end
