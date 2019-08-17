@@ -20,11 +20,11 @@ class Owner
   end
 
   def self.count
-    @@all.count
+    self.all.count
   end
 
   def self.reset_all
-    @@all.clear
+    self.all.clear
   end
 
   def cats
@@ -40,7 +40,7 @@ class Owner
   end
 
   def buy_dog(dog_by_string)
-    new_dog = Dog.new(dog_by_string, self)
+    Dog.new(dog_by_string, self)
   end
 
   def walk_dogs
@@ -52,6 +52,11 @@ class Owner
   end
 
   def sell_pets
+    pets = self.dogs = self.cats
+    pets.each do |x|
+      pet.mood = "nervous"
+      pet.owner = nil
+
     self.dogs.clear
     self.cats.clear
     self.dogs.each {|x| x.mood = "nervous"}
