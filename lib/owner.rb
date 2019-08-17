@@ -47,6 +47,7 @@ class Owner
     Dog.all.find |x|
     if x.name = dog_name
       x.mood = "happy"
+    end
   end
 
 end
