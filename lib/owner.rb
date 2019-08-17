@@ -46,7 +46,6 @@ class Owner
   def walk_dogs(owner_name, dog_name)
     Dog.all.find |a, b|
     if owner.name = a
-      #binding.pry
       b.mood = "happy"
     end
   end
