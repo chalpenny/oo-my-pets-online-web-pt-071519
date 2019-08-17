@@ -63,5 +63,5 @@ class Owner
   def list_pets
     puts Cats.all + Dogs.all
   end
-  
+
 end
