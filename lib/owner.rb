@@ -43,7 +43,7 @@ class Owner
     new_dog = Dog.new(dog_by_string, self)
   end
 
-  def walk_dogs(dog_name)
+  def walk_dogs
     self.dogs.each {|x| x.mood = "happy"}
   end
 
