@@ -57,12 +57,12 @@ class Owner
       pet.mood = "nervous"
       pet.owner = nil
 
-    self.dogs.clear
-    self.cats.clear
-    self.dogs.each {|x| x.mood = "nervous"}
-    self.cats.each {|x| x.mood = "nervous"}
-    self.dogs.each {|x| x.owner = nil}
-    self.cats.each {|x| x.owner = nil}
+    #self.dogs.clear
+    #self.cats.clear
+    #self.dogs.each {|x| x.mood = "nervous"}
+    #self.cats.each {|x| x.mood = "nervous"}
+    #self.dogs.each {|x| x.owner = nil}
+    #self.cats.each {|x| x.owner = nil}
   end
 
   def list_pets
