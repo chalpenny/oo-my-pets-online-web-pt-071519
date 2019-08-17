@@ -43,11 +43,8 @@ class Owner
     new_dog = Dog.new(dog_by_string, self)
   end
 
-  def walk_dogs(owner_name, dog_name)
-    Dog.all.find |a, b|
-    if owner.name = a
-      b.mood = "happy"
-    end
+  def walk_dogs(dog_name)
+    self.dogs.each |x| x.mood = "happy"
   end
 
 end
